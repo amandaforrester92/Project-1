@@ -1,89 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Playstations</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-</head>
+  <head>
+    <title>Flexbox Alignment</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
 
-<body>
-  <header>
-    <h1 style="background-color: blue;">Generations of Playstations</h1>
-  </header>
+  <body>
+    <header>
+      <h1>Generations of Playstations</h1>
+    </header>
 
-  <nav>
-    <a href="#">Playstation 1</a>
-    <a href="#">Playstation 2</a>
-    <a href="#">Playstation 3</a>
-    <a href="#">Playstation 4</a>
-    <a href="#">Playstation 5</a>
-  </nav>
+    <nav>
+      <a href="#">Playstation 1</a>
+      <a href="#">Playstation 2</a>
+      <a href="#">Playstation 3</a>
+      <a href="#">Playstation 4</a>
+      <a href="#">Playstation 5</a>
+    </nav>
 
-  <main>
-    <section class="product">
-
-      <div class="product-slideshow">
-        <button>&lt;</button>
-        <div>
-          <img src="images/ps1.png" alt="Playstation 1">
-          <img class="mySlides" src="images/ps2.jpg" alt="Playstation 2">
-          <img class="mySlides" src="images/ps3.jpg" alt="Playstation 3">
-          <img class="mySlides" src="images/ps4.jpg" alt="Playstation 4">
-          <img class="mySlides" src="images/ps5.jpg" alt="Playstation 5">
+    <main>
+      <section class="product">
+        <div class="product-slideshow">
+          <button>&lt;</button>
+          <!-- Wrap the image in a div to avoid weird flexbox behavior -->
+          <div>
+            <img class="product-image" src="./assets/images/camera.jpg" alt="camera" />
+          </div>
+          <button>&gt;</button>
         </div>
-        <button>&gt;</button>
-      </div>
-      <div class="product-details">
-        <h2>Playstation One</h2>
-        <p>Playstation (DISC)</p>
-        <p>Release December 1995<br>
-          Original price: $300</p>
-        <p>Playstation PS One (DISC)</p>
-        <p>Release September 2000<br>
-          Original price: $300</p>
-        <p>Both of these systems required memory cards (sold separately)</p>
-        <ul>
-          <li> PS1 sales $102.4 million</li>
-        </ul>
-       <h3>Playstation 2</h3> 
-       <p>Release October 2000
-        Original Price: $300
-        Memory: 8MB</p>
-        <ul>
-          <li> PS2 sales $155 million <br><strong>
-          "Best selling system"</strong></li>
-        </ul>
-        <h4>Playstation 3</h4>
-          <p>Release 2006
-            Original Price: $500
-            Memory: 20GB, 60GB</p>
-            <ul>
-              <li> PS3 sales $87.4 million</li>
-            </ul>
-            <h5>Playstation 4</h5>
-            <p>Release 2013
-              Original Price: $400
-              Memory: 500GB</p>
-              <ul>
-                <li> PS4 sales $117.2 million</li>
-              </ul>
-            <h6>Playstation 5</h6>
-            <p>Release November 2020
-              Original price: $400
-              Memory: 825GB</p>
-              <ul>
-                <li> PS5 sales $62.9 million</li>
-              </ul>
-      </div>
-    </section>
-  </main>
+        <div class="product-details">
+          <h2>Playstation 1</h2>
+          <p>Playstation (DISC)</p>
+          <p>Release December 1995<br>
+            Original price: $300</p>
+          <p>Playstation PS One (DISC)</p>
+          <p>Release September 2000<br>
+            Original price: $300</p>
+          <p>Both of these systems required memory cards (sold separately)</p>
+        </div>
+      </section>
+    </main>
 
-  <footer>
-    Not stolen
-  </footer>
-
-</body>
+    <footer>
+      Not Stolen
+    </footer>
+  </body>
 
 </html>
