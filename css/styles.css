@@ -1,137 +1,79 @@
-/* styles.css */
+* {
+  box-sizing: border-box;
+}
 
-/* General body styling */
 body {
-    font-family: 'Lobster', 'Georgia', 'Gill Sans', 'monospace', Arial, sans-serif;
-    background-color: hsl(228, 83%, 46%);
-    color: #0e0505;
-  }
-  
-  /* Header styling */
-  header {
-    width: 100%;
-    background-color: #333;
-    border-bottom: 5px solid #4f4847;
-    color: #ecf0f1; /* Lighter text color for contrast */
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern touch */
-  }
-  
-  header nav h1 {
-    padding: 10px;
-    font-size: 1.5em;
-    text-align: center;
-  }
-  
-  /* Sidebar styling */
-  #nav_sidebar {
-    width: 20px; /* Thin width when not hovered */
-    background-color: #333;
-    color: white;
-    top: 5%;
-    left: 0;
-    height: 50%;
-    overflow: hidden;
-    transition: width 0.3s ease, background-color 0.3s ease;
-    border-radius: 0 10px 10px 0; /* Rounded corners */
-    position: fixed; /* Fix position */
-  }
-  
-  #nav_sidebar:hover {
-    width: 250px; /* Expanded width on hover */
-    background-color: #444;
-  }
-  
-  #nav_sidebar a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    margin: 5px 0;
-    border-radius: 10px;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-  }
-  
-  #nav_sidebar a:hover {
-    background-color: #575757;
-  }
-  
-  /* Main content styling */
-  main {
-    margin-left: 30px; /* Space for collapsed sidebar */
-    padding: 20px;
-    padding-top: 80px; /* Space for header */
-    padding-bottom: 60px; /* Space for footer */
-  }
-  
-  /* Page styling */
-  .page {
-    display: none; /* Hide all pages by default */
-  }
-  
-  .styled-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .styled-table thead tr {
-    background-color: #333;
-    color: #ffffff;
-    text-align: left;
-  }
-  
-  .styled-table th,
-  .styled-table td {
-      padding: 12px 15px;
-  }
-  
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
 
-  /* Form styling */
-  form {
-    margin-bottom: 20px;
+header {
+  padding: 40px;
+  text-align: center;
+  background: #1b578f;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  background-color: #9a52dd;
+}
+
+nav a {
+  color: #000000;
+  padding: 14px 20px;
+  text-decoration: black;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #1c68af;
+  color: #fff;
+  margin-top: auto;
+}
+
+.product {
+  display: flex;
+  width: 90%;
+  margin: 1% auto;
+}
+
+.product button {
+  font-size: 150%;
+}
+
+.product-slideshow {
+  display: flex;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-details {
+  margin-left: 3%;
+  flex: 0 0 60%;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav,
+  .product {
+    flex-direction: column;
   }
-  
-  label {
-    display: block;
-    margin: 10px 0 5px;
+
+  .product-slideshow button {
+    /* Removes the slideshow buttons from the document flow */
+    display: none;
   }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+
+  .product-details {
+    margin-left: 0;
   }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Footer styling */
-  footer {
-    background-color: #333;
-    color: #fbfbf3;
-    padding: 10px;
-    border-top: 5px solid #4f4847;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 1000;
-  }
+}
