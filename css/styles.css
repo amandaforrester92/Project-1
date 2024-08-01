@@ -66,6 +66,10 @@ main {
   transition: background-color 0.3s;
 }
 
+.product-image {
+  width: 100%;
+}
+
 .product-slideshow button:hover {
   background-color: #005ea8;
 }
@@ -99,3 +103,10 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  main,
+  nav,
+  .product {
+    flex-direction: column;
+  }
